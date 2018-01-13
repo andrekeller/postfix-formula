@@ -1,0 +1,5 @@
+user = {{ salt['pillar.get']('postfix_mysql', {}).get('user') }}
+password = {{ salt['pillar.get']('postfix_mysql', {}).get('password') }} 
+dbname = {{ salt['pillar.get']('postfix_mysql', {}).get('dbname') }}
+hosts = {{ salt['pillar.get']('postfix_mysql', {}).get('hosts') }}
+query = SELECT CONCAT("relay:", backend, ":25") AS transport FROM backends INNER JOIN domains ON domains.backend_fk = backends.backends_pk WHERE domains.domain = '%s'

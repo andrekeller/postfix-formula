@@ -1,0 +1,3 @@
+{%- for alias, target in salt['pillar.get']('postfix_aliases', {})|dictsort %}
+{{ alias }}: {{ target }}
+{%- endfor %}

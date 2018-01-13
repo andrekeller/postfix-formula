@@ -1,0 +1,19 @@
+0.0.0.0/8             REJECT IP address of sender domain MX unacceptable
+10.0.0.0/8            REJECT IP address of sender domain MX unacceptable
+100.64.0.0/10         REJECT IP address of sender domain MX unacceptable
+127.0.0.0/8           REJECT IP address of sender domain MX unacceptable
+169.254.0.0/16        REJECT IP address of sender domain MX unacceptable
+172.16.0.0/12         REJECT IP address of sender domain MX unacceptable
+192.0.0.0/24          REJECT IP address of sender domain MX unacceptable
+192.0.2.0/24          REJECT IP address of sender domain MX unacceptable
+192.88.99.0/24        REJECT IP address of sender domain MX unacceptable
+192.168.0.0/16        REJECT IP address of sender domain MX unacceptable
+198.18.0.0/15         REJECT IP address of sender domain MX unacceptable
+198.51.100.0/24       REJECT IP address of sender domain MX unacceptable
+203.0.113.0/24        REJECT IP address of sender domain MX unacceptable
+224.0.0.0/3           REJECT IP address of sender domain MX unacceptable
+255.255.255.255/32    REJECT IP address of sender domain MX unacceptable
+
+2001:db8::/32         REJECT IP address of sender domain MX unacceptable
+3ffe::/16             REJECT IP address of sender domain MX unacceptable
+f000::/4              REJECT IP address of sender domain MX unacceptable

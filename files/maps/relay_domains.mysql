@@ -1,0 +1,5 @@
+user = {{ salt['pillar.get']('postfix_mysql', {}).get('user') }}
+password = {{ salt['pillar.get']('postfix_mysql', {}).get('password') }} 
+dbname = {{ salt['pillar.get']('postfix_mysql', {}).get('dbname') }}
+hosts = {{ salt['pillar.get']('postfix_mysql', {}).get('hosts') }}
+query = SELECT 1 FROM domains WHERE domains.domain = '%s'
